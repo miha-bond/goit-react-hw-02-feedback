@@ -1,4 +1,4 @@
-const Statistics = ({ good, neutral, bad, total, feedback, positive }) => {
+const Statistics = ({ good, neutral, bad, total, positive }) => {
   return (
     <div>
       <p>
@@ -12,9 +12,6 @@ const Statistics = ({ good, neutral, bad, total, feedback, positive }) => {
       </p>
       <p>
         Total: <span>{total}</span>
-      </p>
-      <p>
-        Positive feedback: <span>{feedback}</span>
       </p>
       {positive && (
         <p>
