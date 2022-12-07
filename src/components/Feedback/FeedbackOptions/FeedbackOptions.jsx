@@ -1,5 +1,3 @@
-import React from 'react';
-
 const FeedbackOptions = ({ options, onOptinClick }) => {
   return options.map(option => {
     return (

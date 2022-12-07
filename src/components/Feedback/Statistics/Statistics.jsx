@@ -1,9 +1,6 @@
-import React from 'react';
-
 const Statistics = ({ good, neutral, bad, total, feedback, positive }) => {
   return (
     <div>
-      <h2>Statistics</h2>
       <p>
         Good: <span>{good}</span>
       </p>
