@@ -1,8 +1,8 @@
 import React from 'react';
-import Section from './Feedback/Section/Section';
-import Statistics from './Feedback/Statistics/Statistics';
-import Notification from './Feedback/Notification/Notification';
-import FeedbackOptions from './Feedback/FeedbackOptions/FeedbackOptions';
+import Section from './Section/Section';
+import Statistics from './Statistics/Statistics';
+import Notification from './Notification/Notification';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 
 class App extends React.Component {
   state = {
@@ -32,10 +32,12 @@ class App extends React.Component {
     return (
       <div>
         <Section title="Please leave feadback">
-          <FeedbackOptions
-            options={Object.keys(this.state)}
-            onOptinClick={this.hendelOption}
-          />
+          <div style={{ display: 'flex', gap: '10px', marginLeft: '15px' }}>
+            <FeedbackOptions
+              options={Object.keys(this.state)}
+              onOptinClick={this.hendelOption}
+            />
+          </div>
         </Section>
 
         <Section title="Statistics">
