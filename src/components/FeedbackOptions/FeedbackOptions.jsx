@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onOptinClick }) => {
@@ -13,6 +14,11 @@ const FeedbackOptions = ({ options, onOptinClick }) => {
       </button>
     );
   });
+};
+
+FeedbackOptions.propTypes = {
+  option: PropTypes.objectOf(PropTypes.string),
+  onOptinClick: PropTypes.func.isRequired,
 };
 
 export default FeedbackOptions;
